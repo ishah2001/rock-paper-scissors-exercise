@@ -1,6 +1,7 @@
 # this is the "game.py" file...
 
 import random
+import os
 
 
 
@@ -63,6 +64,7 @@ if(userInput == "PAPER"):
 		print("You Lost to the computer :(")
 
 #Goodbye Message
+print("")
 print("Thanks for playing. Please play again!")
 		
 
