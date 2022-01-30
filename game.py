@@ -4,11 +4,11 @@ import random
 import os
 
 
-
+player_name = os.getenv("PLAYER_NAME", default = "Player One")
 
 print("Rock, Paper, Scissors, Shoot!")
 print("")
-print("Welcome Player One to my Rock, Paper, Scissors Game!")
+print("Welcome " + player_name + " to my Rock, Paper, Scissors Game!")
 print("")
 
 
