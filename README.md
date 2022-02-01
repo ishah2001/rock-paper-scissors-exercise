@@ -14,6 +14,7 @@ In order to to start up the game, several commands must be entered in either Ter
 After navigating to the rock-paper-scissors-exercise directory, type in the following two lines:
 
 conda create -n my-game-env python=3.8 # (first time only)
+
 conda activate my-game-env
 
 ###Playing the game
