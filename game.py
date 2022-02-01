@@ -4,6 +4,8 @@ import random
 import os
 
 
+#Bonus #1: Passing of player name through environment variable
+
 player_name = os.getenv("PLAYER_NAME", default = "Player One")
 
 print("Rock, Paper, Scissors, Shoot!")
@@ -14,53 +16,53 @@ print("")
 
 #Getting input for user
 
-userInput = input("Please choose Rock, Paper, or Scissors: ")
-userInput = userInput.upper()
+user_input = input("Please choose Rock, Paper, or Scissors: ")
+user_input = user_input.upper()
 print("")
 
-if(userInput != "SCISSORS" and userInput != "ROCK" and userInput != "PAPER"):
+if(user_input != "SCISSORS" and user_input != "ROCK" and user_input != "PAPER"):
 	print("Invalid Input. The game will now end. Goodbye :)")
 	quit()
 
 
 #Printing what the user selected
-print ("You selected " +userInput)
+print ("You selected " +user_input)
 print("")
 
 
 #Computer Choice done randomly
-computerOptions = ["ROCK", "PAPER", "SCISSORS"]
-computerChoice = random.choice(computerOptions)
+computer_options = ["ROCK", "PAPER", "SCISSORS"]
+computer_choice = random.choice(computer_options)
 
 #Printing What the Computer Selects
-print ("The computer has selected " + computerChoice)
+print ("The computer has selected " + computer_choice)
 print("")
 
 
 #Determining the winner
 
-if(userInput == "SCISSORS"):
-	if(computerChoice == "SCISSORS"):
+if(user_input == "SCISSORS"):
+	if(computer_choice == "SCISSORS"):
 		print ("You Tied with the computer")
-	if(computerChoice == "PAPER"):
+	if(computer_choice == "PAPER"):
 		print ("You Won against the computer :)")
-	if(computerChoice == "ROCK"):
+	if(computer_choice == "ROCK"):
 		print("You Lost to the computer :(")
 
-if(userInput == "ROCK"):
-	if(computerChoice == "ROCK"):
+if(user_input == "ROCK"):
+	if(computer_choice == "ROCK"):
 		print("You Tied with the computer")
-	if(computerChoice == "SCISSORS"):
+	if(computer_choice == "SCISSORS"):
 		print ("You Won against the computer :)")
-	if(computerChoice == "PAPER"):
+	if(computer_choice == "PAPER"):
 		print("You Lost to the computer :(")
 
-if(userInput == "PAPER"):
-	if(computerChoice == "PAPER"):
+if(user_input == "PAPER"):
+	if(computer_choice == "PAPER"):
 		print("You Tied with the computer")
-	if(computerChoice == "ROCK"):
+	if(computer_choice == "ROCK"):
 		print ("You Won against the computer :)")
-	if(computerChoice == "SCISSORS"):
+	if(computer_choice == "SCISSORS"):
 		print("You Lost to the computer :(")
 
 #Goodbye Message
