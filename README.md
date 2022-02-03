@@ -28,7 +28,6 @@ In order to play the game, simply type the following line:
 
 ```sh
 python game.py
-
 ```
 
 ### Custom name
