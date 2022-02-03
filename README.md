@@ -11,7 +11,7 @@ at Georgetown University by Ishaan Shah (MSB'23)
 
 In order to to start up the game, several commands must be entered in either Terminal or GitBash(for Windows users):
 
-After navigating to the rock-paper-scissors-exercise directory, type in the following two lines:
+After navigating to the rock-paper-scissors-exercise directory, type in the following three lines:
 
 ```sh
 conda create -n my-game-env python=3.8 # (first time only)
@@ -19,7 +19,9 @@ conda create -n my-game-env python=3.8 # (first time only)
 ```sh
 conda activate my-game-env
 ```
-
+```sh
+pip install -r requirements.txt
+```
 
 
 ### Playing the game
@@ -38,6 +40,16 @@ start the game with this line in terminal (or GitBash):
 ```sh
 PLAYER_NAME="Jon Doe" python game.py
 ```
+
+### Checking
+
+In this repository is also the feature of autochecking the program to make sure the game logic is correct throughout.
+In order to run this test, enter the following line in terminal (or GitBash):
+
+```sh
+pytest
+```
+
 
 
 
