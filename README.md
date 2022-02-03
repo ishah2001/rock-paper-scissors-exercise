@@ -1,4 +1,4 @@
-#rock-paper-scissors-exercise
+# rock-paper-scissors-exercise
 
 Welcome to Rock, Paper, Scissors!
 This game was developed as part of the OPIM-243 class Intro to Business App Development(Python)
