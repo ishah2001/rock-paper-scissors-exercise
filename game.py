@@ -62,6 +62,7 @@ if __name__ == "__main__":
     user_input = user_input.lower()
     print("")
 
+    # invalid input message
     if(user_input != "scissors" and user_input != "rock" and user_input != "paper"):
         print("Invalid Input. The game will now end. Goodbye :)")
         quit()
